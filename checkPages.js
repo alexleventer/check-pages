@@ -426,7 +426,7 @@ module.exports = function(host, options, done) {
       err = new Error(pluralize(issueCount, 'issue') + '.' +
         (options.summary ? '' : ' (Set options.summary for a summary.)'));
     }
-    done(err, issueCount);
+    done(err, issues);
   });
 
   // Process the queue
